@@ -6,13 +6,17 @@ class Geese_Removal_Test(unittest.TestCase):
     
     def test_removal_of_geese(self):
         self.assertListEqual(non_geese, geese_removed)
+    
+    
 
 
 geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
 
-non_geese = ["Mallard", "Hook Bill", "Crested", "Blue Swedish"]
+def geese_removal_function(birds):
+    geese_removed = ["Mallard", "Hook Bill", "Crested", "Blue Swedish"]
+    non_geese = ["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]
 
-geese_removed = ["Mallard", "Hook Bill", "Crested", "Blue Swedish"]
+
 
 
 if __name__ == '__main__':
