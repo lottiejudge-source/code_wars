@@ -16,7 +16,11 @@ class Geese_Removal_Test(unittest.TestCase):
         result = geese_removal_function(birds)
         self.assertListEqual(result, expected)
 
-    
+    def test_all_geese_in_list(self):
+        birds = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+        expected = []
+        result = geese_removal_function(birds)
+        self.assertListEqual(result, expected)
     
 
 
